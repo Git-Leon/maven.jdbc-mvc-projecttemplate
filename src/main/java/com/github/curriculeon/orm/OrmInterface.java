@@ -1,4 +1,4 @@
-package com.github.curriculeon.dto;
+package com.github.curriculeon.orm;
 
 import com.github.curriculeon.model.EntityInterface;
 
@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by leon on 8/14/2020.
  */
-public interface DtoInterface<EntityType extends EntityInterface> {
+public interface OrmInterface<EntityType extends EntityInterface> {
     ResultSet getResultSet();
     List<EntityType> toList();
 }
